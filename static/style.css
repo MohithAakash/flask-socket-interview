@@ -1,0 +1,157 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+.form {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 600;
+    background-color: hsl(0, 0%, 96%);
+    margin: auto;
+    width: 50%;
+    padding: 12px;
+    font-size: 25px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+label {
+
+    padding: 17px;
+    display: inline-block;
+}
+
+input[type="number"] {
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-left: 2%;
+}
+
+.interviewer-name {
+    width: 98%;
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: block;
+    margin-left: 2%;
+}
+
+.interviewer-name:hover,
+input[type="number"]:hover {
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
+    border: 0.5px solid black;
+
+}
+
+input[type="submit"] {
+
+    background-color: #1b262c;
+    color: white;
+    padding: 15px;
+    margin: 35px;
+    width: 30%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bolder;
+    float: right;
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+    font-size: 14px;
+}
+
+.heading {
+    text-align: center;
+    background-color: #1b262c;
+    color: white;
+    padding: 10px;
+    margin: 20px 2px;
+}
+
+.message-holder {
+    text-align: center;
+}
+
+.loader {
+    border: 7px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 7px solid #3498db;
+    width: 45px;
+    height: 45px;
+    animation: spin 0.7s linear infinite;
+    display: inline-block;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+h3 {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.tbl {
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    display: none;
+}
+
+table,
+td,
+th {
+    text-align: center;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+th {
+    height: 60px;
+    background-color: #1b262c;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+tr:last-child {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #1b262c;
+}
+
+tr:nth-child(even) {
+    background-color: #e6e6e6;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
