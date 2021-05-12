@@ -2,7 +2,6 @@ from flask import Flask, render_template, url_for
 from flask_socketio import SocketIO
 
 app = Flask(__name__)
-# app.config['SECRET_KEY'] = 'vnkdjnfjknfl1232#'
 socketio = SocketIO(app)
 
 no_of_interviewers = 2
