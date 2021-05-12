@@ -16,10 +16,7 @@ def session():
 
 @socketio.on('my event')
 def handle_my_custom_event(scores, methods=['GET', 'POST']):
-    # print('received my event: ' + str(json))
     score_list.append(scores)
-    print(score_list)
-
     if len(score_list) == no_of_interviewers:
         calculate_average(score_list)
         socketio.emit('my response', score_list)
@@ -39,4 +36,4 @@ def calculate_average(scores):
 
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True)
+    socketio.run(app)
